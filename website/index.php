@@ -1,41 +1,7 @@
 
-<!DOCTYPE html>
 <?php
-$contacts = file('contacts.txt', true);
+  include_once 'header.php';
 ?>
-<html>
-<head>
-<title>272 Studio</title>
-</head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><b>272</b> Studio</a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#home" class="w3-bar-item w3-button">Home</a>
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-      <a href="#news" class="w3-bar-item w3-button">News</a>
-      <a href="#contacts" class="w3-bar-item w3-button">Contacts</a>
-      <a href="/login.html" class="w3-bar-item w3-button">Login</a>
-      <a href="/database.html" class="w3-bar-item w3-button">User</a>
-    </div>
-  </div>
-</div>
-
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="/img/inner_page_bnr.jpg" alt="Banner" width="1500" height="800">
-  <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>272</b></span> <span class="w3-hide-small w3-text-light-grey">Studio</span></h1>
-  </div>
-</header>
 
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px">
@@ -191,38 +157,6 @@ $contacts = file('contacts.txt', true);
   </div>
 </div>
 
-<!-- Google Map -->
-<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
-
-<!-- Add Google Maps -->
-<script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(37.335187, -121.881072);
-  var mapOptions= {
-    center:myCenter,
-    zoom:11, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_xoglIfoDDBzuV404yZtKVTlcnNEnayk&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
-
-</body>
-</html>
+<?php
+  include_once 'footer.php';
+?>
