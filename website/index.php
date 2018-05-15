@@ -1,4 +1,3 @@
-
 <?php
   include_once 'header.php';
 ?>
@@ -40,64 +39,64 @@
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
   </div>
 
-  <div class="w3-row-padding">
+  <div class="w3-row-padding" id="tocurl">
     <div class="w3-col l4 m4 s12 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding"><a href="projects/project1.php" class="w3-hover-text-lime">UI/UX design</a></div>
+        <div class="w3-display-topleft w3-sand w3-padding"><a href="projects/project1.php" class="w3-hover-text-lime">UI/UX design</a></div>
         <img src="/img/project1.jpg" alt="project-img" height="230" width="400">
       </div>
     </div>
     <div class="w3-col l4 m4 s12 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding"><a href="projects/project2.php" class="w3-hover-text-lime">Database design</a></div>
+        <div class="w3-display-topleft w3-sand w3-padding"><a href="projects/project2.php" class="w3-hover-text-lime">Database design</a></div>
         <img src="/img/project2.jpg" alt="project-img" height="230" width="400">
       </div>
     </div>
     <div class="w3-col l4 m4 s12 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding"><a href="projects/project3.php" class="w3-hover-text-lime">System design</a></div>
+        <div class="w3-display-topleft w3-sand w3-padding"><a href="projects/project3.php" class="w3-hover-text-lime">System design</a></div>
         <img src="/img/project3.jpg" alt="project-img" height="230" width="400">
       </div>
     </div>
     <div class="w3-col l4 m4 s12 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding"><a href="projects/project4.php" class="w3-hover-text-lime">Website construction</a></div>
+        <div class="w3-display-topleft w3-sand w3-padding"><a href="projects/project4.php" class="w3-hover-text-lime">Website construction</a></div>
         <img src="/img/project4.jpeg" alt="project-img" height="230" width="400">
       </div>
     </div>
     <div class="w3-col l4 m4 s12 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding"><a href="projects/project5.php" class="w3-hover-text-lime">Cloud storage</a></div>
+        <div class="w3-display-topleft w3-sand w3-padding"><a href="projects/project5.php" class="w3-hover-text-lime">Cloud storage</a></div>
         <img src="/img/project5.jpeg" alt="project-img" height="230" width="400">
       </div>
     </div>
     <div class="w3-col l4 m4 s12 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding"><a href="projects/project6.php" class="w3-hover-text-lime">Enterprise network design</a></div>
+        <div class="w3-display-topleft w3-sand w3-padding"><a href="projects/project6.php" class="w3-hover-text-lime">Enterprise network design</a></div>
         <img src="/img/project6.jpeg" alt="project-img" height="230" width="400">
       </div>
     </div>
     <div class="w3-col l4 m4 s12 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding"><a href="projects/project7.php" class="w3-hover-text-lime">Mobile app</a></div>
+        <div class="w3-display-topleft w3-sand w3-padding"><a href="projects/project7.php" class="w3-hover-text-lime">Mobile app</a></div>
         <img src="/img/project7.png" alt="project-img" height="230" width="400">
       </div>
     </div>
     <div class="w3-col l4 m4 s12 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding"><a href="projects/project8.php" class="w3-hover-text-lime">Game design</a></div>
+        <div class="w3-display-topleft w3-sand w3-padding"><a href="projects/project8.php" class="w3-hover-text-lime">Game design</a></div>
         <img src="/img/project8.jpeg" alt="project-img" height="230" width="400">
       </div>
     </div>
     <div class="w3-col l4 m4 s12 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding"><a href="projects/project9.php" class="w3-hover-text-lime">Space travel</a></div>
+        <div class="w3-display-topleft w3-sand w3-padding"><a href="projects/project9.php" class="w3-hover-text-lime">Space travel</a></div>
         <img src="/img/project9.jpeg" alt="project-img" height="230" width="400">
       </div>
     </div>
     <div class="w3-col l4 m4 s12 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding"><a href="projects/project10.php" class="w3-hover-text-lime">Teleportation</a></div>
+        <div class="w3-display-topleft w3-sand w3-padding"><a href="projects/project10.php" class="w3-hover-text-lime">Teleportation</a></div>
         <img src="/img/project10.jpeg" alt="project-img" height="230" width="400">
       </div>
     </div>
