@@ -37,11 +37,15 @@
 <?php endif; ?>
 <?php if($_GET['login'] == 'success' || !empty($_SESSION['id'])): ?>
   <div class="w3-content w3-padding" style="max-width:1564px">
-    <div align="right">
+    <div class="w3-col l6 m6 s6">
+      <h1><a href="/top5.php">Top 5 Products/Services</a></h1>
+    </div>
+    <div class="w3-col l6 m6 s6" align="right">
       <button class="w3-button w3-round-xlarge w3-sand">
             <a href='logout.php'>Log out</a>
       </button>
     </div>
+
 
     <div class="w3-container w3-padding-32" id="272">
       <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">272 Studio</h3>

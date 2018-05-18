@@ -27,6 +27,7 @@
       exit();
     } else {
       echo "Creation error";
+      exit();
     }
   }
 
