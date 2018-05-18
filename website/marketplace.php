@@ -2,7 +2,8 @@
   // session_start();
   include_once 'header.php';
 ?>
-<?php if(empty($_SERVER['QUERY_STRING']) || $_GET['login'] == 'existed' || $_GET['login'] == 'incorrect' || $_GET['login'] == 'notexisted'): ?>
+<?php if(empty($_SESSION['id'])): ?>
+  <?php if(empty($_SERVER['QUERY_STRING']) || $_GET['login'] == 'existed' || $_GET['login'] == 'incorrect' || $_GET['login'] == 'notexisted' ): ?>
     <div class="w3-content w3-padding" style="max-width:1564px">
       <div class="w3-container w3-padding-32" id="m_login">
         <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Marketplace Login</h3>
@@ -32,8 +33,9 @@
       </div>
     </div>
     </br></br>
+  <?php endif; ?>
 <?php endif; ?>
-<?php if($_GET['login'] == 'success'): ?>
+<?php if($_GET['login'] == 'success' || !empty($_SESSION['id'])): ?>
   <div class="w3-content w3-padding" style="max-width:1564px">
     <div align="right">
       <button class="w3-button w3-round-xlarge w3-sand">
@@ -45,28 +47,28 @@
       <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">272 Studio</h3>
     </div>
     <?php
-      include_once ('include/272.php');
+      readfile('include/272.html');
     ?>
-    
-    <div class="w3-container w3-padding-32" id="kittey">
+
+    <div class="w3-container w3-padding-32" id="iris">
       <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Iris Wedding</h3>
     </div>
     <?php
-      include_once ('include/iris.php');
+      readfile('include/iris.html');
     ?>
 
     <div class="w3-container w3-padding-32" id="kittey">
-      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Kittey's Bistro</h3>
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Kittey Bistro</h3>
     </div>
     <?php
-      include_once ('include/kittey.php');
+      readfile('include/kittey.html');
     ?>
 
-    <div class="w3-container w3-padding-32" id="kittey">
+    <div class="w3-container w3-padding-32" id="shikai">
       <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Shikai's Cafe</h3>
     </div>
     <?php
-      include_once ('include/shikai.php');
+      readfile('include/shikai.html');
     ?>
 
   </div>

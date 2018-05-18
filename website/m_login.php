@@ -21,6 +21,7 @@
     $hashed = password_hash("$PASSWORD", PASSWORD_DEFAULT);
     $query1 = "INSERT INTO login (usrname, psword) VALUES " . "('$USERNAME', '$hashed')";
     if ($conn->query($query1)) {
+      $_SESSION['id'] = $USERNAME;
       header("Location: ../marketplace.php?login=success");
       mysqli_close($conn);
       exit();
@@ -36,6 +37,7 @@
       while($row = $result->fetch_assoc()) {
         if ($row['usrname'] == $USERNAME) {
           if (password_verify($PASSWORD, $row['psword'])) {
+            $_SESSION['id'] = $USERNAME;
             header("Location: ../marketplace.php?login=success");
             mysqli_close($conn);
             exit();

@@ -30,7 +30,9 @@ $contacts = file('contacts.txt', true);
       <a href="/index.php#contacts" class="w3-bar-item w3-button">Contacts</a>
       <a href="/login.php" class="w3-bar-item w3-button">Login</a>
       <a href="/database_page.php" class="w3-bar-item w3-button">User</a>
+      
       <a href="/marketplace.php" class="w3-bar-item w3-button">Marketplace</a>
+
     </div>
   </div>
 </div>
