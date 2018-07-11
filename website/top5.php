@@ -26,6 +26,10 @@
     echo "</div>";
   }
   mysqli_close($conn);
-  exit();
 
+?>
+</div>
+
+<?php
+  include_once 'footer.php';
 ?>

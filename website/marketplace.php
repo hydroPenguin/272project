@@ -2,6 +2,7 @@
   // session_start();
   include_once 'header.php';
 ?>
+
 <?php if(empty($_SESSION['id'])): ?>
   <?php if(empty($_SERVER['QUERY_STRING']) || $_GET['login'] == 'existed' || $_GET['login'] == 'incorrect' || $_GET['login'] == 'notexisted' ): ?>
     <div class="w3-content w3-padding" style="max-width:1564px">
@@ -39,7 +40,12 @@
   <div class="w3-content w3-padding" style="max-width:1564px">
     <div class="w3-col l6 m6 s6">
       <h1><a href="/top5.php">Top 5 Products/Services</a></h1>
+      <h1><a href="/top5_company.php">Top 5 Products/Services by Company</a></h1>
+      <h1><a href="/visited.php">Last Visited Products/Services</a></h1>
+      <h1><a href="/market_users.php">List All Users</a></h1>
+      <h1><a href="/company.php">Company Links</a></h1>
     </div>
+
     <div class="w3-col l6 m6 s6" align="right">
       <button class="w3-button w3-round-xlarge w3-sand">
             <a href='logout.php'>Log out</a>

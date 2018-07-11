@@ -44,10 +44,10 @@ fieldset, label { margin: 0; padding: 0; }
 </style>
 
 <div class="w3-container" align="center">
-<div class="w3-card-4 w3-container w3-padding" >
+<div class="w3-panel w3-card-4 w3-container w3-padding" >
 	<form class="w3-container" method = "post" action = "addreview.php">
 		<div class="w3-container w3-padding" style="padding-bottom: 18px;font-size : 24px;">Comments</div>
-				<input type="text" id="comment" name="comment" style="width:850px;height:200px;" class="form-control" required/>
+				<input type="text" id="comment" name="comment" style="width:80%;height:200px;" class="form-control" required/>
 		<div class="w3-container w3-padding">
 			<fieldset class="rating">
         <legend>Please rate before submit</legend>

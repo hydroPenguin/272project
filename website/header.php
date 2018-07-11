@@ -1,10 +1,12 @@
 <?php
-  session_start();
+  if (!session_id() && !headers_sent()) {
+    session_start();
+}  
 ?>
 
 <!DOCTYPE html>
 <?php
-$contacts = file('contacts.txt', true);
+  $contacts = file('contacts.txt', true);
 ?>
 <html>
 <head>
